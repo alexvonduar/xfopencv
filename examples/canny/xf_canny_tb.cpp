@@ -268,7 +268,7 @@ int main(int argc, char **argv)
 
 	fprintf(stderr,"Minimum error in intensity = %f\n Maximum error in intensity = %f\n Percentage of pixels above error threshold = %f\nNo of Pixels with Error = %d\n",minval,maxval,err_per, cnt);
 
-	if(err_per > 0.5f)
+	if(err_per > 2.0f)
 		return 1;
 	/*			Destructors			*/
 	in_img.~Mat();
